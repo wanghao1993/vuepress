@@ -1,6 +1,6 @@
 module.exports = {
     title: 'vuepress-demo',  // 设置网站标题
-    dest: './vuepress/dist',    // 设置输出目录
+    dest: './.vuepress/dist',    // 设置输出目录
     base: '/vuepress/',
     themeConfig: {
         nav: [

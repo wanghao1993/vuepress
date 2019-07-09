@@ -2,11 +2,13 @@
 
 # 确保脚本抛出遇到的错误
 set -e
+sudo rm -rf .vuepress/dist
 
 # 生成静态文件
 sudo npm run build
 
 # 进入生成的文件夹
+
 cd .vuepress/dist
 
 # 如果是发布到自定义域名
