@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>创建一个vuepress项目</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.ee84f1fa.css" as="style"><link rel="preload" href="/assets/js/app.e96aaa0e.js" as="script"><link rel="preload" href="/assets/js/2.392d0b46.js" as="script"><link rel="preload" href="/assets/js/10.15f714c1.js" as="script"><link rel="prefetch" href="/assets/js/11.7f73b351.js"><link rel="prefetch" href="/assets/js/12.b2674237.js"><link rel="prefetch" href="/assets/js/13.0e5ab8d8.js"><link rel="prefetch" href="/assets/js/14.01848eb8.js"><link rel="prefetch" href="/assets/js/3.fccd03f6.js"><link rel="prefetch" href="/assets/js/4.f9deb3c5.js"><link rel="prefetch" href="/assets/js/5.95d455b4.js"><link rel="prefetch" href="/assets/js/6.a939775a.js"><link rel="prefetch" href="/assets/js/7.fea535e3.js"><link rel="prefetch" href="/assets/js/8.ad979f53.js"><link rel="prefetch" href="/assets/js/9.3d954f13.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ee84f1fa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/web/html.html" class="nav-link">Web</a></div><div class="nav-item"><a href="/app/nav.html" class="nav-link">App</a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/web/html.html" class="nav-link">Web</a></div><div class="nav-item"><a href="/app/nav.html" class="nav-link">App</a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="创建一个vuepress项目"><a href="#创建一个vuepress项目" aria-hidden="true" class="header-anchor">#</a> 创建一个vuepress项目</h3> <p>1.全局安装vuepress</p> <div class="language-js extra-class"><pre class="language-js"><code>npm i vuepress <span class="token operator">-</span>g
+</code></pre></div><p>2.创建一个readme.md</p> <div class="language-md extra-class"><pre class="language-md"><code>echo '# Hello VuePress' &gt; README.md
+</code></pre></div><p>3.开始写文档</p> <div class="language-js extra-class"><pre class="language-js"><code>vuepress dev
+</code></pre></div><p>运行起来后长这样子的
+<img src="images/1.jpg" alt="An image"></p> <h3 id="创建配置文件"><a href="#创建配置文件" aria-hidden="true" class="header-anchor">#</a> 创建配置文件</h3> <p>默认是没有任何配置文件的比如header，和sideNav都是没有的
+1.首先创建一个.vuepress的目录</p> <pre><code>mkdir .vuepress
+</code></pre> <p>2.在.vuepress目录下新建一个config.js<br>
+3.配置主题-导航链接</p> <pre><code>所有的主题配置都在config.js中配置
+</code></pre> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        nav<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Web'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'App'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'/guide/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token string">'Github'</span><span class="token punctuation">,</span> link<span class="token punctuation">:</span> <span class="token string">'https://github.com/'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>nav负责配置头部导航</p> <p>4.配置主题-侧边导航</p> <p>4.1 一般配置</p> <div class="language-js extra-class"><pre class="language-js"><code>sidebar<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token string">'web/html'</span><span class="token punctuation">,</span> <span class="token string">'HTML'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token string">'web/css'</span><span class="token punctuation">,</span> <span class="token string">'CSS'</span><span class="token punctuation">]</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>sidebar 负责配置侧边导航，形式是[link, text]的形式</p> <p>4.2 侧边栏组(sidebar groups)</p> <pre><code>sidebar: [
+    {
+        title: 'Web',
+        collapsable: false,
+        children: [
+            ['web/html', 'HTML'],
+            ['web/css', 'CSS']
+        ]
+    }
+]
+</code></pre> <p>4.3 多侧边栏
+如果你希望为不同的页面组显示不同的侧边栏，请先将页面组织到目录中：</p> <pre><code>├─ README.md
+├─ web
+│  ├─ html.md
+│  ├─ css.md
+│  └─ js.md
+└─ app
+   ├─ header.md
+   ├─ nav.md
+   └─ content.md
+ sidebar: {
+    '/web/': [['html', 'HTML'], ['css', 'CSC']]
+}
+</code></pre> <h3 id="现在基本的配置已经完成"><a href="#现在基本的配置已经完成" aria-hidden="true" class="header-anchor">#</a> 现在基本的配置已经完成</h3> <h4 id="配置主页"><a href="#配置主页" aria-hidden="true" class="header-anchor">#</a> 配置主页</h4> <p>默认主题提供了一个主页布局（用于该网站的主页）。要使用它，需要在你的根目录 README.md 的 YAML front matter 中指定 home：true 加上一些其他元数据。这是本网站使用的实际数据：</p> <div class="language-md extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br></div><pre class="language-md"><code><span class="token hr punctuation">---</span>
+home: true
+actionText: Get Started →
+actionLink: /web/html
+features:
+<span class="token list punctuation">-</span> title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+<span class="token list punctuation">-</span> title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+<span class="token list punctuation">-</span> title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+<span class="token title important">footer: Vuepress 采坑记录
+<span class="token punctuation">---</span></span>
+</code></pre></div><h4 id="编写vue组件"><a href="#编写vue组件" aria-hidden="true" class="header-anchor">#</a> 编写vue组件</h4> <p>1.在.vuepress下创建components目录</p> <div class="language-md extra-class"><pre class="language-md"><code>.vuepress / components 中的任意 * .vue 文件都会自动注册为全局的异步组件:
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    &lt;div class=&quot;&quot;&gt;</span>
+<span class="token code keyword">        demo-a</span>
+<span class="token code keyword">    &lt;/div&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h4 id="使用组件"><a href="#使用组件" aria-hidden="true" class="header-anchor">#</a> 使用组件</h4> <p>1.例如在html.md中使用demo-a组件：</p> <pre><code>&lt;demo-a/&gt;
+</code></pre> <p>如下图
+<img src="images/2.jpg" alt="">
+使用起来非常的方便</p> <h4 id="自定义主题"><a href="#自定义主题" aria-hidden="true" class="header-anchor">#</a> 自定义主题</h4> <p>1.在.vuepress下创建theme目录，再创建LayOut.vue就可以自定义主题；
+2.还可以动过vuepress eject dirname的方式直接下载默认主题的样式，在此基础上自行修改</p> <h4 id="部署"><a href="#部署" aria-hidden="true" class="header-anchor">#</a> 部署</h4></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e96aaa0e.js" defer></script><script src="/assets/js/2.392d0b46.js" defer></script><script src="/assets/js/10.15f714c1.js" defer></script>
+  </body>
+</html>
