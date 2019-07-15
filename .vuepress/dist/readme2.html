@@ -7,7 +7,7 @@
     <meta name="description" content="">
     
     
-    <link rel="preload" href="/vuepress/assets/css/0.styles.9d122487.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.cb0b0de1.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.dfc330dd.js" as="script"><link rel="preload" href="/vuepress/assets/js/10.b7e73da2.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/11.23b83190.js"><link rel="prefetch" href="/vuepress/assets/js/12.e6053cbf.js"><link rel="prefetch" href="/vuepress/assets/js/13.76ca0570.js"><link rel="prefetch" href="/vuepress/assets/js/14.01848eb8.js"><link rel="prefetch" href="/vuepress/assets/js/3.fccd03f6.js"><link rel="prefetch" href="/vuepress/assets/js/4.14e7e707.js"><link rel="prefetch" href="/vuepress/assets/js/5.f35eae9f.js"><link rel="prefetch" href="/vuepress/assets/js/6.1e633d57.js"><link rel="prefetch" href="/vuepress/assets/js/7.fa21fa27.js"><link rel="prefetch" href="/vuepress/assets/js/8.bd799faa.js"><link rel="prefetch" href="/vuepress/assets/js/9.3e97c811.js">
+    <link rel="preload" href="/vuepress/assets/css/0.styles.9d122487.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.422f9d93.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.dfc330dd.js" as="script"><link rel="preload" href="/vuepress/assets/js/10.5128c383.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/11.10d06117.js"><link rel="prefetch" href="/vuepress/assets/js/12.a5eca498.js"><link rel="prefetch" href="/vuepress/assets/js/13.77a6bea4.js"><link rel="prefetch" href="/vuepress/assets/js/14.01848eb8.js"><link rel="prefetch" href="/vuepress/assets/js/3.fccd03f6.js"><link rel="prefetch" href="/vuepress/assets/js/4.14e7e707.js"><link rel="prefetch" href="/vuepress/assets/js/5.f35eae9f.js"><link rel="prefetch" href="/vuepress/assets/js/6.e7a722d1.js"><link rel="prefetch" href="/vuepress/assets/js/7.a77754f8.js"><link rel="prefetch" href="/vuepress/assets/js/8.6a6686ac.js"><link rel="prefetch" href="/vuepress/assets/js/9.5e97074b.js">
     <link rel="stylesheet" href="/vuepress/assets/css/0.styles.9d122487.css">
   </head>
   <body>
@@ -83,7 +83,32 @@ features:
 </code></pre> <p>如下图
 <img src="images/2.jpg" alt="">
 使用起来非常的方便</p> <h4 id="自定义主题"><a href="#自定义主题" aria-hidden="true" class="header-anchor">#</a> 自定义主题</h4> <p>1.在.vuepress下创建theme目录，再创建LayOut.vue就可以自定义主题；
-2.还可以动过vuepress eject dirname的方式直接下载默认主题的样式，在此基础上自行修改</p> <h4 id="部署"><a href="#部署" aria-hidden="true" class="header-anchor">#</a> 部署</h4></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/vuepress/assets/js/app.cb0b0de1.js" defer></script><script src="/vuepress/assets/js/2.dfc330dd.js" defer></script><script src="/vuepress/assets/js/10.b7e73da2.js" defer></script>
+2.还可以动过vuepress eject dirname的方式直接下载默认主题的样式，在此基础上自行修改</p> <h4 id="部署"><a href="#部署" aria-hidden="true" class="header-anchor">#</a> 部署</h4> <p>创建一个deploy.sh然后编写脚本</p> <div class="language- extra-class"><pre class="language-text"><code>#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误
+set -e
+sudo rm -rf .vuepress/dist
+
+# 生成静态文件
+sudo npm run build
+
+# 进入生成的文件夹
+
+cd .vuepress/dist
+
+# 如果是发布到自定义域名
+# echo 'www.ilosts.com' &gt; CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# 如果发布到 https://&lt;USERNAME&gt;.github.io
+# git push -f git@github.com:wanghao1993/vuepress.git master:gh-pages
+
+
+cd -
+</code></pre></div><h4 id="线上地址-www-ilosts-com"><a href="#线上地址-www-ilosts-com" aria-hidden="true" class="header-anchor">#</a> 线上地址 www.ilosts.com</h4> <h4 id="github-https-github-com-wanghao1993-vuepress"><a href="#github-https-github-com-wanghao1993-vuepress" aria-hidden="true" class="header-anchor">#</a> github https://github.com/wanghao1993/vuepress</h4></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.422f9d93.js" defer></script><script src="/vuepress/assets/js/2.dfc330dd.js" defer></script><script src="/vuepress/assets/js/10.5128c383.js" defer></script>
   </body>
 </html>
